@@ -29,3 +29,16 @@
         - type to 'image/png'
         - sizes to '512x512'
 - Link to the Manifest File from our index.html file
+- the point of this is to tell the browser information about the application so that when it is displayed on the homescreen, it loads correctly.
+
+
+
+Previewing in an android emulation
+        - download android studio and spin up an android emulator
+        - open up google chrome on the device & use a proxy link to view website
+        - (not 127.0.0.1:5500/index.html) as in your browser
+        - (but rather 10.0.2.2:5500) and we should see our website
+        - in chrome browser, click on the hamburger icon and choose 'Add to homescreen'.
+        - on the homescreen you should see the app that can be loaded and the view will be like a native app. 
+        - notice the url bar is not present. this is because of the display property in our manifest.json
+        
