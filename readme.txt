@@ -41,4 +41,16 @@ Previewing in an android emulation
         - in chrome browser, click on the hamburger icon and choose 'Add to homescreen'.
         - on the homescreen you should see the app that can be loaded and the view will be like a native app. 
         - notice the url bar is not present. this is because of the display property in our manifest.json
+
+
+
+IOS SUPPORT
+        - some of the manifest property are not supported on IOS namely the icons & theme_color.
+        - if we tried to add this app using safari on an IOS device, it will not use the icons that we specify instead it will take a screen shot of our app and use that as the icon instead
+        - to set the icon, we would use a link element in the head of our html to set the icon to use on apple devices. (we could use multiple link element for each size to the IOS device can choose one)
+                <link rel="apple-touch-icon" href="img/icons/icon-96x96.png" />
         
+        - to set the theme-color, we would use a meta tag
+                <meta name="apple-mobile-web-app-status-bar" content="#aa7700" />
+
+            "src": "img/icons/icon-96x96.png
