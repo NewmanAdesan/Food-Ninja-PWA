@@ -54,3 +54,20 @@ IOS SUPPORT
                 <meta name="apple-mobile-web-app-status-bar" content="#aa7700" />
 
             "src": "img/icons/icon-96x96.png
+
+
+Intro to Service workers
+
+     What Service Workers allows us to do?
+        - the beating heart of PWA's making it more native
+        - they allow of loading content offline (network-independence by using cached assets & data)
+        - they allow background sync (if offline-users performs an action that requires network connection, it can perform the action for them when connection is re-established even when the application has been closed)
+        - they allow push notifications to re-engage and remind user of content
+
+     What exactly are service workers
+        - they are javascript file but not normal ones
+        - normal javascript files are tightly coupled with the html & css file and can access/manipulate the DOM
+        - service workers JS files RUN ON A SEPARATE THREAD in another part of the browser
+        - service workers JS file DO NOT HAVE ACCESS TO THE DOM
+        - service workers are a BACKGROUND PROCESS and will carry on their task even if the app is closed.
+        - service workers JS files LISTEN AND REACT TO EVENTS CARRIED ON IN THE BROWSER such as push-notification made from server to browser, fetch http request made by the browser
